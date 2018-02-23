@@ -1,0 +1,56 @@
+<div>
+    <span>
+        <i class="fa fa-info-circle"></i>
+        <span style="color: darkblue;font-family: Verdana, Geneva, Tahoma, sans-serif"> Modification de la formation /
+            <b style="color: darkorchid">{{formation.codeFormation}}</b>
+        </span>
+    </span>
+</div>
+<hr>
+<div>
+    <form ng-submit="modifier()">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Code">Code Formation</label>
+                <input ng-model="formation.codeFormation" type="text" class="form-control" id="Code">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Nom">Nom Formation</label>
+                <input ng-model="formation.nomFormation" type="text" class="form-control" id="Nom" placeholder="Nom Formation">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Diplôme">Diplôme</label>
+                <select ng-model="formation.diplome" id="Diplôme" class="form-control">
+                    <option value="M" selected>Master</option>
+                    <option value="L" selected>Licence</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="DoubleDiplôme">Double Diplôme</label>
+                <select ng-model="formation.doubleDiplome" id="DoubleDiplôme" class="form-control">
+                    <option value="O" selected>Oui</option>
+                    <option value="N" selected>Non</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="noAnnee">N° Année</label>
+                <input ng-model="formation.n0Annee" type="number" class="form-control" id="noAnnee">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="debutAccreditation">Début Accreditation</label>
+                <input ng-model="formation.debutAccreditation" type="text" class="form-control" id="debutAccreditation" placeholder="debutAccreditation">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="finAccreditation">Fin Accreditation</label>
+                <input ng-model="formation.finAccreditation" type="text" class="form-control" id="finAccreditation" placeholder="finAccreditation">
+            </div>
+        </div>
+
+        <button type="submit" class="fa fa-edit btn btn-warning float-md-left"> Valider</button><br><br>
+    </form>
+</div>

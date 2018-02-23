@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	<a class="navbar-brand" ui-sref="dashboard" style="color: white">SPI</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+	 aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<ul class="navbar-nav">
+			<li ui-sref-active="active" class="nav-item">
+				<a class="nav-link" ui-sref="dashboard">Home
+
+				</a>
+			</li>
+			<li ui-sref-active="active" class="nav-item">
+				<a class="nav-link" ui-sref="formations">Formations</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Candidats</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Enseignants</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Promotions</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div>&nbsp;</div>
+<div class="container-fluid" >
+	<div class=" row" >
+		<div class="col" >
+			<ul class="list-group"  >
+					<a ui-sref="dashboard" ui-sref-active="active" class="list-group-item list-group-item-action">Dashboard</a>
+				<a ui-sref="formations" ui-sref-active="active" class="list-group-item list-group-item-action">Formation</a>
+				<a href="#" ui-sref-active="active" class="list-group-item list-group-item-action">Candidats</a>
+				<a ui-sref="enseignants" ui-sref-active="active" class="list-group-item list-group-item-action">Enseignant</a>
+				<a href="#" ui-sref-active="active" class="list-group-item list-group-item-action">Promotions</a>
+
+			</ul>
+		</div>
+		<div class="col-9">
+			<div class="card card-body">
+				<ui-view name="home"></ui-view>
+			</div>
+		</div>
+	</div>
+</div>

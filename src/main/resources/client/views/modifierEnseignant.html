@@ -1,0 +1,85 @@
+<div>
+    <span>
+        <i class="fa fa-info-circle"></i>
+        <span style="color: darkblue;font-family: Verdana, Geneva, Tahoma, sans-serif"> Modification de l'enseignant /
+            <b style="color: darkorchid">{{enseignant.nom}} - {{enseignant.prenom}}</b>
+        </span>
+    </span>
+</div>
+<hr>
+<div>
+    <form ng-submit="modifier()">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="Num">Numéro Enseignant</label>
+                <input ng-model="enseignant.noEnseignant" type="number" class="form-control" id="Num" placeholder="Numéro Ens">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="Nom">Nom</label>
+                <input ng-model="enseignant.nom" type="text" class="form-control" id="Nom" placeholder="Nom ">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="prenom">Prénom</label>
+                <input ng-model="enseignant.prenom" type="text" class="form-control" id="prenom" placeholder="prenom">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="adresse">Adresse</label>
+                <input ng-model="enseignant.adresse" type="text" class="form-control" id="adresse" placeholder="2, rue des archives">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="codePostal">Code Postal</label>
+                <input ng-model="enseignant.codePostal" type="text" class="form-control" id="codePostal" placeholder="29200">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="pays">Pays</label>
+                <select ng-model="enseignant.pays" id="pays" class="form-control">
+                    <option value="FR" selected>France</option>
+                    <option value="MA" selected>Maroc</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="sexe">Sexe</label>
+                <select ng-model="enseignant.sexe" id="sexe" class="form-control">
+                    <option value="M" selected>M</option>
+                    <option value="F" selected>F</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="emailPerso">Email Perso</label>
+                <input ng-model="enseignant.emailPerso" type="email" class="form-control" id="emailPerso" placeholder="imad@gmail.com">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="emailUbo">Email UBO</label>
+                <input ng-model="enseignant.emailUbo" type="email" class="form-control" id="emailUbo" placeholder="imad@ubo-brest.com">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="type">Type</label>
+                <select ng-model="enseignant.type" id="type" class="form-control">
+                    <option value="MCF" selected>Ens. Chercheur</option>
+                    <option value="INT" selected>Intervenant</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="mobile">Mobile</label>
+                <input ng-model="enseignant.mobile" type="tel" class="form-control" id="mobile" placeholder="02 14 25 14 53">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="telephone">Téléphone</label>
+                <input ng-model="enseignant.telephone" type="tel" class="form-control" id="telephone" placeholder="06 59 78 93 25">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="ville">Ville</label>
+                <input ng-model="enseignant.ville" type="text" class="form-control" id="ville" placeholder="Marrakech">
+            </div>
+        </div>
+        <button type="submit" class="fa fa-edit btn btn-warning float-md-left"> Valider</button>
+        <br>
+        <br>
+    </form>
+</div>

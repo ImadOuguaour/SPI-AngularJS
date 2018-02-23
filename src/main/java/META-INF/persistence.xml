@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="spi-base-2018-master">
+		<class>fr.univbrest.dosi.beans.Candidat</class>
+		<class>fr.univbrest.dosi.beans.ElementConstitutif</class>
+		<class>fr.univbrest.dosi.beans.ElementConstitutifPK</class>
+		<class>fr.univbrest.dosi.beans.Enseignant</class>
+		<class>fr.univbrest.dosi.beans.Etudiant</class>
+		<class>fr.univbrest.dosi.beans.Formation</class>
+		<class>fr.univbrest.dosi.beans.Promotion</class>
+		<class>fr.univbrest.dosi.beans.PromotionPK</class>
+		<class>fr.univbrest.dosi.beans.UniteEnseignement</class>
+		<class>fr.univbrest.dosi.beans.UniteEnseignementPK</class>
+	</persistence-unit>
+</persistence>
